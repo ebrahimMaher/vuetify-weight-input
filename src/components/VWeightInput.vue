@@ -11,7 +11,7 @@
                 
                 <v-row class="mx-0">
                     <v-col cols="12" class="mb-3" :class="{'rtl-dir': rtl}">
-                        <!-- <v-text-field readonly outlined hide-details class="weight-number strong-text--text" :value="parseFloat(inputValue).toFixed(3)"></v-text-field> -->
+                        <!-- <v-text-field readonly outlined hide-details class="weight-number black--text" :value="parseFloat(inputValue).toFixed(3)"></v-text-field> -->
                         <div class="weight-number w-100">
                             <div class="d-flex align-center">
                                 <div class="me-2">
@@ -19,7 +19,7 @@
                                         <v-icon size="20">mdi-backspace-outline</v-icon>
                                     </v-btn>
                                 </div>
-                                <h2 class="ltr-dir strong-text--text">
+                                <h2 class="ltr-dir black--text">
                                     <span>{{inputValue}}</span>
                                     <span class="placeholder muted--text">{{completeWeightPlaceholder}}</span>
                                 </h2>
@@ -45,7 +45,7 @@
                         <v-divider class="my-2" />
                         <v-row class="mx-0 ltr-dir align-center">
                             <v-col v-for="i in 9" :key="'key-' + i" cols="4">
-                                <v-btn text class="surface2" block color="strong-text" @click="numClick(i)">{{i}}</v-btn>
+                                <v-btn text class="surface2" block color="black" @click="numClick(i)">{{i}}</v-btn>
                             </v-col>
                             <v-col cols="4">
                                 <v-btn depressed dark block color="error" @click="inputValue = ''">
@@ -53,10 +53,10 @@
                                 </v-btn>
                             </v-col>
                             <v-col cols="4">
-                                <v-btn text class="surface2" block color="strong-text" @click="numClick(0)">0</v-btn>
+                                <v-btn text class="surface2" block color="black" @click="numClick(0)">0</v-btn>
                             </v-col>
                             <v-col cols="4">
-                                <v-btn text class="surface2" block color="strong-text" @click="addPointToValue">.</v-btn>
+                                <v-btn text class="surface2" block color="black" @click="addPointToValue">.</v-btn>
                             </v-col>
                         </v-row>
                     </v-col>
@@ -89,8 +89,8 @@ export default {
         suffix: {type: Boolean, default: true},
         rtl: {type: Boolean, default: true},
         unit: {type: String, default: 'kg'},
-        width: {default: 110},
-        maxWidth: {default: 110},
+        width: {default: 280},
+        maxWidth: {default: 280},
         emptyError: {type: Boolean, default: false},
 
         saveText: {type: String, default: 'save'},
@@ -195,7 +195,7 @@ export default {
         syncValue(){
             let value = this.value;
             if (value){
-                this.inputValue = parseFloat(value.toFixed(3)).toString();
+                this.inputValue = parseFloat(value).toFixed(3).toString();
             }else{
                 this.inputValue = '';
             }
@@ -276,7 +276,7 @@ export default {
             // font-family: digital!important;
             text-align: center;
             border: 1px solid;
-            padding: 7px 16px;
+            padding: 7px 8px;
             border-radius: 4px;
         }
         .col{
@@ -292,6 +292,9 @@ export default {
                     font-size: 0.8rem!important;
                 }
             }
+        }
+        .surface2{
+            background-color: hsl(0, 0, 50%, 0.07);
         }
     }
 </style>
