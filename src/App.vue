@@ -1,37 +1,44 @@
 <template>
   <v-app>
-     <v-main>
-       <v-container fluid>
-          <div class="text-center d-flex align-center justify-center">
-            <v-weight-input v-model="weight" outlined />
-          </div>
-       </v-container>
-     </v-main>
+    <v-app-bar
+      app
+      color="secondary"
+      dark
+    >
+      <v-container>
+        <div class="d-flex justify-space-between align-center">
+          <h2 class="font-weight-medium">VUETIFY WEIGHT INPUT</h2>
+          <div>Developed by: Ebrahim Maher</div>
+        </div>
+      </v-container>
+    </v-app-bar>
+
+    <v-main class="mt-12 mx-auto">
+      <v-weight-input outlined v-model="weight"/>
+      
+    </v-main>
   </v-app>
 </template>
 
 <script>
-import VWeightInput from './index'
+import VWeightInput from './components/VWeightInput';
+
 export default {
   name: 'App',
+
   components: {
-    VWeightInput
+    VWeightInput,
   },
-  data(){
-    return {
-      weight: '0',
-    }
-  }
-}
+
+  data: () => ({
+    weight: 0,
+  }),
+};
 </script>
-
-<style lang="scss">
-#app {
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  margin-top: 60px;
-
-  height: 100vh;
-  width: 100vw;
-  text-align: center;
+<style lang="scss" >
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap');
+body div{
+    font-family: "open sans"!important;
 }
+
 </style>

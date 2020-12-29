@@ -8,7 +8,8 @@
         <v-card class="weight-panel py-0 px-3">
             <!-- <v-card-title></v-card-title> -->
             <v-card-text class="pb-0 px-1">
-                
+                <div>
+
                 <v-row class="mx-0">
                     <v-col cols="12" class="mb-3" :class="{'rtl-dir': rtl}">
                         <!-- <v-text-field readonly outlined hide-details class="weight-number black--text" :value="parseFloat(inputValue).toFixed(3)"></v-text-field> -->
@@ -21,10 +22,10 @@
                                 </div>
                                 <h2 class="ltr-dir black--text">
                                     <span>{{inputValue}}</span>
-                                    <span class="placeholder muted--text">{{completeWeightPlaceholder}}</span>
+                                    <span class="placeholder grey--text">{{completeWeightPlaceholder}}</span>
                                 </h2>
                             </div>
-                            <span class="unit medium-text muted--text ms-3">{{unit}}</span>
+                            <span class="unit medium-text grey--text ms-3">{{unit}}</span>
                         </div>
                     </v-col>
                     <v-col cols="12">
@@ -61,6 +62,7 @@
                         </v-row>
                     </v-col>
                 </v-row>
+                </div>
                 
             </v-card-text>
             <v-card-actions>
@@ -87,7 +89,7 @@ export default {
         readonly: {type: Boolean, default: true},
         loading: {type: Boolean, default: false},
         suffix: {type: Boolean, default: true},
-        rtl: {type: Boolean, default: true},
+        rtl: {type: Boolean, default: false},
         unit: {type: String, default: 'kg'},
         width: {default: 280},
         maxWidth: {default: 280},
@@ -279,6 +281,9 @@ export default {
             padding: 7px 8px;
             border-radius: 4px;
         }
+        .row{
+            margin: 0!important;
+        }
         .col{
             padding: 4px!important;
 
@@ -294,7 +299,7 @@ export default {
             }
         }
         .surface2{
-            background-color: hsl(0, 0, 50%, 0.07);
+            background-color: hsla(0, 0, 50%, 0.07);
         }
     }
 </style>
