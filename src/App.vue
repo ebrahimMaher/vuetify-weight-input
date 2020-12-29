@@ -2,7 +2,7 @@
   <v-app>
     <v-app-bar
       app
-      color="secondary"
+      color="indigo darken-1"
       dark
     >
       <v-container>
@@ -43,6 +43,9 @@ export default {
 </script>
 <style lang="scss" >
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap');
+body .v-application{
+  background: #f8f9fb!important;
+}
 body div{
     font-family: "open sans"!important;
 }
