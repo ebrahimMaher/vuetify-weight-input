@@ -8,7 +8,7 @@
 - [Installation](#installation)
 - [Usage](#usage)
   - [Props](#props)
-- [Credits & Contributors](#Credits-&-Contributors)
+- [Credits](#Credits)
 
 ## Installation
 - install `vuetify-weight-input`
