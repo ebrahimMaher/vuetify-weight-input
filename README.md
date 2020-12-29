@@ -17,11 +17,9 @@
 ```
 ## Usage
 ### import and use component
-```
-import VWeightInput from 'vuetify-weight-input';
 > View all available options in [Props](#props).
 
-Use the `vuetify-weight-input` component:
+import and use the `vuetify-weight-input` component:
 
   ```html
   <template>
@@ -29,6 +27,8 @@ Use the `vuetify-weight-input` component:
   <template>
 
   <script>
+  import VWeightInput from 'vuetify-weight-input';
+
   export default {
     components: {VWeightInput},
     data() {
