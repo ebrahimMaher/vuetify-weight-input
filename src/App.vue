@@ -13,8 +13,14 @@
       </v-container>
     </v-app-bar>
 
-    <v-main class="mt-12 mx-auto">
-      <v-weight-input outlined v-model="weight"/>
+    <v-main class="mt-12">
+      <v-container class="d-flex justify-center align-center flex-column text-center">
+
+        <p class="text-center">
+          you can also use keyboard to enter numbers, save, backspace or close
+        </p>
+        <v-weight-input outlined v-model="weight"/>
+      </v-container>
       
     </v-main>
   </v-app>
