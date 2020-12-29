@@ -1,7 +1,7 @@
 {
   "name": "vuetify-weight-input",
-  "version": "1.0.0",
-  "private": true,
+  "version": "1.0.1",
+  "private": false,
   "description": "Nice weight input built by vue & vuetify",
   "author": {
     "name": "Ebrahim Maher"
@@ -52,7 +52,7 @@
   "bugs": {
     "url": "https://github.com/ebrahimMaher/vuetify-weight-input/issues"
   },
-  "homepage": "https://github.com/ebrahimMaher/vuetify-weight-input#readme",
+  "homepage": "https://ebrahimmaher.github.io/vuetify-weight-input/",
   "keywords": [
     "weight",
     "input",
