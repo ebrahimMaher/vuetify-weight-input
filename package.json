@@ -12,7 +12,7 @@
     "lint": "vue-cli-service lint",
     "test": "test"
   },
-  "main": "index.js",
+  "main": "src/index.js",
   "dependencies": {
     "core-js": "^3.6.5",
     "vue": "^2.6.11",
