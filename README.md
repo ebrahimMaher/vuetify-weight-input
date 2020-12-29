@@ -1,6 +1,7 @@
 # Vuetify Weight Input
 > Nice Weight input build by vue & vuetify
-***check demo by [clicking here](https://ebrahimmaher.github.io/vuetify-weight-input/)***
+
+***[check demo by clicking here](https://ebrahimmaher.github.io/vuetify-weight-input/)***
 
 **Table of Contents**
 
